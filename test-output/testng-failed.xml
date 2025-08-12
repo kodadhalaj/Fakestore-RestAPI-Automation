@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FakestoreUserAPI]">
+  <listeners>
+    <listener class-name="utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="FakestoreUserAPITest(failed)">
+    <classes>
+      <class name="testcases.UserTests">
+        <methods>
+          <include name="testcaseGetAllUsers"/>
+          <include name="setupData"/>
+        </methods>
+      </class> <!-- testcases.UserTests -->
+    </classes>
+  </test> <!-- FakestoreUserAPITest(failed) -->
+</suite> <!-- Failed suite [FakestoreUserAPI] -->

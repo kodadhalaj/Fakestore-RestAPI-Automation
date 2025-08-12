@@ -1,0 +1,40 @@
+public class ExtentReportManager {
+
+    private static ExtentReports extent;
+    private static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<>();
+
+    private ExtentReportManager() {
+        // Private constructor to enforce Singleton pattern
+    }
+
+    public static ExtentReports getInstance() {
+        if (extent == null) {
+            extent = new ExtentReports();
+            ExtentSparkReporter spark = new ExtentSparkReporter("target/ExtentReport.html");
+            spark.config().setDocumentTitle("Automation Report");
+            spark.config().setReportName("Test Results");
+            spark.config().setTheme(com.aventstack.extentreports.reporter.model.Theme.DARK);
+            extent.attachReporter(spark);
+            // Add system information
+            extent.setSystemInfo("OS", System.getProperty("os.name"));
+            extent.setSystemInfo("Java Version", System.getProperty("java.version"));
+        }
+        return extent;
+    }
+
+    public static ExtentTest createTest(String testName) {
+        ExtentTest test = getInstance().createTest(testName);
+        extentTest.set(test);
+        return test;
+    }
+
+    public static ExtentTest getTest() {
+        return extentTest.get();
+    }
+
+    public static void flushReport() {
+        if (extent != null) {
+            extent.flush();
+        }
+    }
+}

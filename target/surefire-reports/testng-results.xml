@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-10T00:21:12 EDT" name="Surefire suite" finished-at="2025-08-10T00:21:17 EDT" duration-ms="5149">
+    <groups>
+    </groups>
+    <test started-at="2025-08-10T00:21:12 EDT" name="Surefire test" finished-at="2025-08-10T00:21:17 EDT" duration-ms="5149">
+      <class name="testcases.UserTests">
+        <test-method is-config="true" signature="setupData()[pri:0, instance:testcases.UserTests@703580bf]" started-at="2025-08-10T00:21:12 EDT" name="setupData" finished-at="2025-08-10T00:21:12 EDT" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupData -->
+        <test-method signature="testcasePostUser()[pri:1, instance:testcases.UserTests@703580bf]" started-at="2025-08-10T00:21:12 EDT" name="testcasePostUser" finished-at="2025-08-10T00:21:15 EDT" duration-ms="2640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcasePostUser -->
+        <test-method signature="testcaseGetAllUsers()[pri:2, instance:testcases.UserTests@703580bf]" started-at="2025-08-10T00:21:15 EDT" name="testcaseGetAllUsers" finished-at="2025-08-10T00:21:15 EDT" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseGetAllUsers -->
+        <test-method signature="testcaseGetUserById()[pri:3, instance:testcases.UserTests@703580bf]" started-at="2025-08-10T00:21:15 EDT" name="testcaseGetUserById" finished-at="2025-08-10T00:21:16 EDT" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseGetUserById -->
+        <test-method signature="testcaseUpdateUserById()[pri:4, instance:testcases.UserTests@703580bf]" started-at="2025-08-10T00:21:16 EDT" name="testcaseUpdateUserById" finished-at="2025-08-10T00:21:16 EDT" duration-ms="625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcaseUpdateUserById -->
+        <test-method signature="deleteUser()[pri:5, instance:testcases.UserTests@703580bf]" started-at="2025-08-10T00:21:16 EDT" name="deleteUser" finished-at="2025-08-10T00:21:17 EDT" duration-ms="564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- testcases.UserTests -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
